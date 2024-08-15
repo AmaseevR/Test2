@@ -1,0 +1,141 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  padding: 30px 0;
+}
+
+.top_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 38px;
+}
+
+.top_left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  & h2 {
+    margin: 0;
+  }
+  & span {
+    color: #16c098;
+  }
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f9fbff;
+  width: 216px;
+  height: 38px;
+  border-radius: 10px;
+  padding: 8px;
+
+  & input {
+    border: none;
+    background: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table_header {
+  color: #b5b7c0;
+}
+
+.table_header,
+.table_row {
+  height: 70px;
+  display: table-row;
+  width: 100%;
+  & div {
+    display: table-cell;
+    align-content: center;
+  }
+  & div:nth-child(1) {
+    padding-left: 38px;
+  }
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.status_Active {
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  color: #008767;
+  background: #16c09861;
+  border-radius: 4px;
+  border: 1px solid #008767;
+  padding: 0 !important;
+}
+
+.status_Inactive {
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  color: #df0404;
+  background: #ffc5c5;
+  border-radius: 4px;
+  border: 1px solid #df0404;
+  padding: 0 !important;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 38px;
+}
+.pagination_info {
+  color: #b5b7c0;
+  font-size: 14px;
+}
+
+.pills_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  border: 1px solid #eeeeee;
+  color: #404b52;
+  & .next {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background: #5932ea;
+    border-color: #5932ea;
+    color: #ffffff;
+  }
+}
+
+.pill_active {
+  background: #5932ea;
+  border-color: #5932ea;
+  color: #ffffff;
+}
